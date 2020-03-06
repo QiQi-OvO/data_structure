@@ -2,9 +2,9 @@ class Node():
     def __init__(self, elem):
         self.elem = elem
         self.next = None
+        self.pre = None
 
-
-class SingleLink():
+class DoubleLink():
     def __init__(self, node=None):
         self.__head = node
 
@@ -41,7 +41,7 @@ class SingleLink():
         link = str(cursor.elem)
         cursor = cursor.next
         while (cursor is not None):
-            link += "->" + str(cursor.elem)
+            link += "<->" + str(cursor.elem)
             cursor = cursor.next
         print(link)
         return
@@ -53,10 +53,15 @@ class SingleLink():
         :return:
         """
         # 空
+
         tmp_node = Node(elem)
+        if self.__head is None:
+            self.__head = tmp_node
+            return
         tmp_cursor = self.__head
         self.__head = tmp_node
         tmp_node.next = tmp_cursor
+        tmp_cursor.pre = self.__head
         return
 
     def append(self, elem):
@@ -73,6 +78,7 @@ class SingleLink():
         while (cursor.next is not None):
             cursor = cursor.next
         cursor.next = tmp_node
+        tmp_node.pre = cursor
         return
 
     def insert(self, pos, elem):
@@ -85,7 +91,7 @@ class SingleLink():
         cursor = self.__head
         tmp_node = Node(elem)
         count = 1
-        if pos < 1 or pos > self.get_length() + 1:
+        if pos < 1 or pos > self.get_length()+1:
             print("输入错误，请重试")
             return
         elif pos == 1:
@@ -94,11 +100,16 @@ class SingleLink():
             self.__head = tmp_node
             tmp_node.next = tmp_cursor
             return
+        elif pos == self.get_length()+1:
+            self.append(elem)
+            return
         while (cursor is not None):
             if count == pos - 1:
                 tmp_cursor = cursor.next
                 cursor.next = tmp_node
+                tmp_node.pre =cursor
                 tmp_node.next = tmp_cursor
+                tmp_cursor.pre = tmp_node
                 break
             cursor = cursor.next
             count += 1
@@ -110,26 +121,27 @@ class SingleLink():
         :param node:
         :return:
         """
-        cursor_pre = None
         cursor = self.__head
-        if self.__head == None:
-            print("空链表 删除失败")
+        if self.__head is None:
+            print("空链表无法删除")
             return False
-        if self.get_length() == 1:
+        elif self.get_length() == 1:
             self.__head = None
             print("删除成功")
             return True
         while (cursor is not None):
             if cursor.elem == elem:
-                if cursor == self.__head:
+                if cursor == self.__head :
+                    cursor.next.pre = self.__head
                     self.__head = cursor.next
+                elif cursor.next is not  None:
+                    cursor.pre.next = cursor.next
+                    cursor.next.pre = cursor.pre
                 else:
-                    cursor_pre.next = cursor.next
+                    cursor.pre.next = None
                 print("删除成功")
                 return True
-            cursor_pre = cursor
             cursor = cursor.next
-
         print("未发现相关元素，删除失败")
         return False
 
@@ -146,19 +158,19 @@ class SingleLink():
             cursor = cursor.next
         return False
 
-
 if __name__ == '__main__':
-    single_link = SingleLink()
-    single_link.append("第2个元素")
-    single_link.append("第4个元素")
-    single_link.add("第1个元素")
-    single_link.insert(3, "第3个元素")
-    single_link.travel()
-    single_link.remove_node("第3个元素")
-    # print("链表长度" + str(single_link.get_length()))
-    #     # print("链表:")
-    single_link.travel()
-    # print("第4个元素是否存在:")
-    # print(single_link.search("第4个元素"))
-    # print("第5个元素是否存在:")
-    # print(single_link.search("第5个元素"))
+    # a_node = Node(1)
+    # b_node = Node(2)
+    # a_node.next = b_node
+    # b_node.pre = a_node
+    double_link = DoubleLink()
+    double_link.add(0)
+    double_link.append(1)
+    double_link.append(2)
+    double_link.add(-1)
+    #double_link.insert(5,0.5)
+    double_link.travel()
+    double_link.remove_node(0)
+    double_link.travel()
+
+
