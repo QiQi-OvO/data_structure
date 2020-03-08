@@ -20,6 +20,7 @@
     
 ### 链表
 #### 单链表
-[单链表基本功能实现](https://github.com/QiQi-OvO/data_structure/blob/master/single_link.py)
+[单链表基本功能实现](https://github.com/QiQi-OvO/data_structure/blob/master/single_link.py)  
+[单向循环链表基本功能实现](https://github.com/QiQi-OvO/data_structure/blob/master/single_cycle_link.py)
 #### 双向链表
 [双向链表基本功能实现](https://github.com/QiQi-OvO/data_structure/blob/master/double_link.py)
