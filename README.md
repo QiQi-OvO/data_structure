@@ -31,7 +31,7 @@
 ### 栈
 [栈的基本功能实现](https://github.com/QiQi-OvO/data_structure/blob/master/stack.py)
 ## 线性表的排序
-[Python内置函数排序深入理解](https://github.com/QiQi-OvO/data_structure/blob/master/builtin_sort.py)  
+[Python内置函数排序深入理解](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/builtin_sort.py)  
 [冒泡排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/bubble_sort.py)  
 [选择排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/select_sort.py)  
 [插入排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/insert_sort.py)  
