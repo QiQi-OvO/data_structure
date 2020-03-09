@@ -1,4 +1,4 @@
-# Python数据结构学习
+# Python数据结构和基本算法学习
 由于自己的基础部分薄弱，算法理解不透彻，所以寻找资料来巩固自己的基础知识，并通过Python来实现数据结构，进一步加深自己的Python基础,并把相应数据结构,实现代码放在GitHub方便以后查阅。
 ## 线性表
 ### 顺序表
@@ -30,3 +30,9 @@
 [双向队列基本功能实现](https://github.com/QiQi-OvO/data_structure/blob/master/double_queue.py)
 ### 栈
 [栈的基本功能实现](https://github.com/QiQi-OvO/data_structure/blob/master/stack.py)
+## 线性表的排序
+[Python内置函数排序深入理解](https://github.com/QiQi-OvO/data_structure/blob/master/builtin_sort.py)
+[冒泡排序](https://github.com/QiQi-OvO/data_structure/blob/master/bubble_sort.py)
+[选择排序](https://github.com/QiQi-OvO/data_structure/blob/master/select_sort.py)
+[插入排序](https://github.com/QiQi-OvO/data_structure/blob/master/insert_sort.py)
+[希尔排序](https://github.com/QiQi-OvO/data_structure/blob/master/shell_sort.py)
