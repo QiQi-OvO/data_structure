@@ -35,4 +35,7 @@
 [冒泡排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/bubble_sort.py)  
 [选择排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/select_sort.py)  
 [插入排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/insert_sort.py)  
-[希尔排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/shell_sort.py)
+[希尔排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/shell_sort.py)  
+[快速排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/quick_sort.py)  
+[归并排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/merge_sort.py)  
+[二分查找](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/binary_search.py)
