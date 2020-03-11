@@ -38,4 +38,7 @@
 [希尔排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/shell_sort.py)  
 [快速排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/quick_sort.py)  
 [归并排序](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/merge_sort.py)  
-[二分查找](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/binary_search.py)
+[二分查找](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/binary_search.py)  
+## 树
+### 二叉树
+[二叉树所有模式遍历](https://github.com/QiQi-OvO/data_structure/blob/master/Tree/binary_tree.py)
