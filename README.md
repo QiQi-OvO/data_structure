@@ -41,5 +41,5 @@
 [二分查找](https://github.com/QiQi-OvO/data_structure/blob/master/sort_method/binary_search.py)  
 ## 树
 ### 二叉树
-[二叉树所有模式遍历](https://github.com/QiQi-OvO/data_structure/blob/master/Tree/binary_tree.py)
+[二叉树所有模式遍历](https://github.com/QiQi-OvO/data_structure/blob/master/Tree/binary_tree.py)  
 [二叉堆的基本操作(堆排序)](https://github.com/QiQi-OvO/data_structure/blob/master/Tree/binary_heap.py)
