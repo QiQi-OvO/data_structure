@@ -18,10 +18,12 @@ def quick_sort(disorder_list,first,last):
             low += 1
         disorder_list[high] = disorder_list[low]
     disorder_list[low] = mid_value
+    print(test_list)
+    print(low,high)
     quick_sort(disorder_list,first,low-1)
     quick_sort(disorder_list,low+1,last)
 
 if __name__ == '__main__':
-    test_list = [9,8,12,5,24,66,4,4,11,12,14,665,54,6126]
+    test_list = [21,15,9,7,33]
     quick_sort(test_list,0,len(test_list)-1)
     print(test_list)
